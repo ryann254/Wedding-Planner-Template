@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Playfair+Display&display=swap");
+
+:root {
+  --primary-font-color: #333333;
+  --secondary-font-color: #fecc99;
+  --alternative-font-color: #ffffff;
+  --button-font-color: #4d4d4d;
+  --tertiary-font-color: #364b4d;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4em;
+  color: var(--primary-font-color);
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Header */
+.nav-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 70px;
+}
+
+.navbar-brand {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4em;
+  color: var(--primary-font-color) !important;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.amperstand {
+  color: var(--secondary-font-color);
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--primary-font-color) !important;
+}
+
+/* Landing Image */
+.landing {
+  position: relative;
+}
+
+.landing-image {
+  width: -webkit-fill-available;
+}
+
+.landing .landing-inner {
+  width: 266px;
+}
+
+.landing .landing-inner,
+.landing .content .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.landing-inner .heading {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: var(--alternative-font-color);
+}
+
+.landing .content .btn {
+  width: 176.75px;
+  height: 56px;
+  background: var(--secondary-font-color);
+  top: 76%;
+  transform: translate(-50%, -24%);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--button-font-color) !important;
+  outline: none;
+}
+
+/* About-Services */
+.about-services {
+  position: relative;
+}
+
+.about-services-img,
+.contact-us-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  width: -webkit-fill-available;
+  height: 2069px;
+}
+
+.about-services .line,
+.portfolio .line,
+.testimonials .line,
+.contact-us .line {
+  height: 2px;
+  background: var(--secondary-font-color);
+  width: 48px;
+}
+
+.about-services .heading,
+.portfolio .heading,
+.portfolio .gallery,
+.testimonials .heading,
+.contact-us .heading {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--secondary-font-color);
+}
+
+.about-services .sub-heading,
+.contact .sub-heading {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: var(--alternative-font-color);
+}
+
+.about-services .content,
+.services-content .context,
+.contact input,
+.contact textarea,
+.footer .content {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: var(--secondary-font-color);
+}
+
+.about-image .top-left-box,
+.about-image .bottom-right-box {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  border: 3px solid var(--secondary-font-color);
+  box-sizing: border-box;
+  width: 294.78px;
+  height: 319px;
+  z-index: -1;
+}
+
+.about-image .bottom-right-box {
+  bottom: -15px;
+  top: auto;
+  left: auto;
+  right: 20px;
+}
+
+.about-services .btn {
+  padding: 16px 24px;
+  width: 134px;
+  height: 55px;
+  background: var(--secondary-font-color);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: capitalize;
+  color: var(--button-font-color);
+  outline: none;
+}
+
+.services-content .sub-heading,
+.services-content .content {
+  width: 221px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  color: var(--alternative-font-color);
+}
+
+.services-content .title {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: var(--alternative-font-color);
+}
+
+.services-content .context {
+  width: 320px;
+}
+
+/* Portfolio */
+.portfolio {
+  margin-top: 120px;
+}
+.portfolio .line,
+.testimonials .line {
+  background: var(--button-font-color);
+}
+
+.portfolio .heading,
+.testimonials .heading {
+  color: var(--button-font-color);
+}
+
+.portfolio .gallery {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--button-font-color);
+}
+
+.portfolio-img {
+  width: -webkit-fill-available;
+}
+
+/* Testimonials */
+.testimonials .content-container {
+  background: var(--alternative-font-color);
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.testimonials .content,
+.testimonials .content-pic {
+  color: var(--tertiary-font-color);
+  letter-spacing: 0.2em;
+}
+
+.testimonials .content-pic {
+  letter-spacing: 0.1em;
+}
+
+/* Navigation */
+.navigation .dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(128, 128, 128, 0.5);
+  border-radius: 50%;
+}
+
+.navigation .active {
+  background: var(--button-font-color);
+}
+
+/* Contact-Us */
+.contact {
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.contact .sub-heading {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contact input,
+.contact textarea {
+  letter-spacing: 0.2em;
+  color: var(--tertiary-font-color);
+}
+
+.form-group input,
+.form-group textarea {
+  font-family: "Playfair Display", serif;
+  border-radius: 0;
+  width: 320px;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(54, 75, 77, 0.2);
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: auto;
+}
+
+.form label {
+  color: var(--secondary-font-color);
+}
+
+.form .btn {
+  width: 176.75px;
+  height: 56px;
+  background: var(--secondary-font-color);
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--button-font-color) !important;
+  outline: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contact-us-img {
+  height: 1010px;
+}
+
+/* Footer */
+.footer {
+  background: rgba(26, 26, 26, 0.8);
+}
+
+.footer .content {
+  color: var(--alternative-font-color);
+}
+
+@media all and (max-width: 320px) {
+  /* Contact Us */
+  .form-group input,
+  .form-group textarea {
+    width: 290px;
+  }
+}
+
+@media all and (min-width: 375px) {
+  /* Contact Us */
+  .form-group input,
+  .form-group textarea {
+    width: 340px;
+  }
+
+  .contact-us-img {
+    height: 982px;
+  }
+}
