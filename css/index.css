@@ -19,7 +19,6 @@ body {
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
-  letter-spacing: 0.4em;
   color: var(--primary-font-color);
 }
 
@@ -52,9 +51,15 @@ body {
 }
 
 .navbar-nav .nav-link {
-  font-weight: bold;
-  font-size: 14px;
+  font-weight: normal;
+  font-size: 15px;
   color: var(--primary-font-color) !important;
+}
+
+.collapse {
+  margin-top: 22px;
+  letter-spacing: 0.1em;
+  font-weight: normal;
 }
 
 /* Landing Image */
@@ -113,7 +118,7 @@ body {
   right: 0;
   z-index: -1;
   width: -webkit-fill-available;
-  height: 2069px;
+  height: 2000px;
 }
 
 .about-services .line,
@@ -186,7 +191,7 @@ body {
   background: var(--secondary-font-color);
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15);
   font-family: "Nunito Sans", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 23px;
   text-transform: capitalize;
   color: var(--button-font-color);
@@ -235,7 +240,7 @@ body {
   color: var(--button-font-color);
 }
 
-.portfolio-img {
+.porfolio-img {
   width: -webkit-fill-available;
 }
 
@@ -290,7 +295,7 @@ body {
 .form-group textarea {
   font-family: "Playfair Display", serif;
   border-radius: 0;
-  width: 320px;
+  width: 325px;
   height: 55px;
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(54, 75, 77, 0.2);
@@ -334,6 +339,30 @@ body {
 }
 
 @media all and (max-width: 320px) {
+  /* Header */
+  .collapse {
+    margin-top: 18px;
+  }
+  /* About Us */
+  .about-services-img {
+    height: 2050px;
+  }
+
+  .about-image .top-left-box {
+    top: -10px;
+    left: 6px;
+  }
+
+  .about-image .bottom-right-box {
+    bottom: -10px;
+    right: 5px;
+  }
+
+  /* Portfolio */
+  .portfolio {
+    margin-top: 90px;
+  }
+
   /* Contact Us */
   .form-group input,
   .form-group textarea {
@@ -342,6 +371,22 @@ body {
 }
 
 @media all and (min-width: 375px) {
+  /* About Us */
+  .about-image .top-left-box {
+    top: -15px;
+    left: 40px;
+  }
+
+  .about-image .bottom-right-box {
+    bottom: -15px;
+    right: 40px;
+  }
+
+  /* Portfolio */
+  .portfolio {
+    margin-top: 200px;
+  }
+
   /* Contact Us */
   .form-group input,
   .form-group textarea {
@@ -350,5 +395,63 @@ body {
 
   .contact-us-img {
     height: 982px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 375px;
+  }
+}
+
+@media all and (min-width: 414px) {
+  .collapse {
+    margin-top: 18px;
+  }
+}
+
+@media all and (min-width: 576px) {
+  /* Landing Image */
+  .landing-image {
+    margin-top: -50px;
+  }
+
+  /* About Us */
+  .about-services-img {
+    height: 1800px;
+  }
+
+  .about-image .top-left-box {
+    top: -15px;
+    left: 115px;
+  }
+
+  .about-image .bottom-right-box {
+    bottom: -15px;
+    right: 115px;
+  }
+
+  .services-content .sub-heading,
+  .services-content .context {
+    width: 420px;
+  }
+
+  .services-content .context {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Contact Us */
+  .form-group input,
+  .form-group textarea {
+    width: 525px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  /* Header */
+  #growth {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: flex-end;
   }
 }
