@@ -6,6 +6,7 @@
   --alternative-font-color: #ffffff;
   --button-font-color: #4d4d4d;
   --tertiary-font-color: #364b4d;
+  --header-font-color: #666666;
 }
 
 html,
@@ -60,6 +61,7 @@ body {
   margin-top: 22px;
   letter-spacing: 0.1em;
   font-weight: normal;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 /* Landing Image */
@@ -103,6 +105,7 @@ body {
   line-height: 21px;
   color: var(--button-font-color) !important;
   outline: none;
+  border-radius: 0;
 }
 
 /* About-Services */
@@ -196,6 +199,7 @@ body {
   text-transform: capitalize;
   color: var(--button-font-color);
   outline: none;
+  border-radius: 0;
 }
 
 .services-content .sub-heading,
@@ -270,7 +274,7 @@ body {
   border-radius: 50%;
 }
 
-.navigation .active {
+.navigation .active-dot {
   background: var(--button-font-color);
 }
 
@@ -447,11 +451,165 @@ body {
   }
 }
 
+@media all and (max-width: 767px){
+  .larger-screens {
+    display: none;
+  }
+}
+
 @media all and (min-width: 768px) {
+  .smaller-screens {
+    display: none;
+  }
+
   /* Header */
+  .nav-bg {
+    height: 80px;
+  }
+
   #growth {
     width: -webkit-fill-available;
     display: flex;
     justify-content: flex-end;
+  }
+
+  .normal {
+    flex-grow: 0.1;
+  }
+
+  .collapse {
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: var(--header-font-color);
+    margin-top: 9px !important;
+  }
+
+  .contact-btn {
+    background: var(--secondary-font-color);
+    height: 41px;
+    width: 131px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .active {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 24px;
+    height: 3px;
+    background: var(--secondary-font-color);
+  }
+
+  /* Landing Image */
+  .landing-image {
+    margin-top: 80px;
+  }
+
+  .landing .landing-inner {
+    left: 30%;
+    transform: translate(-70%, -50%);
+  }
+
+  .landing .content .btn {
+    left: 24%;
+    transform: translate(-76%, -50%);
+  }
+
+  .landing-inner .heading {
+    text-align: left !important;
+  }
+
+  /* About Services */
+  .about-services-img {
+    height: 1400px;
+  }
+  .about-image .top-left-box,
+  .about-image .bottom-right-box {
+    width: 300px;
+  }
+
+  .about-image .top-left-box {
+    left: 0;
+  }
+
+  .about-image .bottom-right-box{
+    right: 0;
+  }
+
+  .about-services .line,
+  .portfolio .line {
+    width: 64px;
+  }
+
+  .about-services .about {
+    margin-top: 100px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .about-services .about-image {
+    margin-top: 157px !important;
+  }
+
+  .book-now-btn {
+    margin-top: 0px !important;
+  }
+
+  .services-content {
+    margin-top: 50px;
+  }
+
+  .services-content .sub-heading {
+    width: 400px;
+  }
+
+  .services-content .context {
+    width: 320px;
+}
+
+  .box-right-2 {
+    bottom: 88px !important;
+  }
+
+  .services-content .services-heading {
+    margin-bottom: 24px !important;
+  }
+
+  .services-content .sub-heading {
+    margin-bottom: 24px !important;
+  }
+
+  .services-content .title-line {
+    margin-top: 3.5%;
+    width: 27px;
+  }
+
+  /* Portfolio */
+  
+  .portfolio-images .image {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    margin-bottom: 0 !important;
+  }
+
+  .testimonials .content-container {
+    border: none;
+    box-shadow: none;
+  }
+
+  .testimonials .content-pic {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  /* Navigation */
+  .navigation {
+    margin-left: 60px !important;
   }
 }
