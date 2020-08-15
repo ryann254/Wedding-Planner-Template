@@ -327,6 +327,7 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 0;
 }
 
 .contact-us-img {
@@ -570,7 +571,9 @@ body {
 }
 
   .box-right-2 {
-    bottom: 88px !important;
+    bottom: auto !important;
+    top: 25px !important;
+    height: 310px !important;
   }
 
   .services-content .services-heading {
@@ -587,7 +590,10 @@ body {
   }
 
   /* Portfolio */
-  
+  .portfolio {
+    margin-top: 90px;
+  }
+
   .portfolio-images .image {
     padding-left: 5px !important;
     padding-right: 5px !important;
@@ -602,14 +608,230 @@ body {
     border: none;
     box-shadow: none;
   }
-
+  .testimonials .content,
   .testimonials .content-pic {
-    margin-top: 20px;
+    margin-top: 20px !important;
     margin-left: 20px;
+    color: var(--button-font-color);
+  }
+
+  .testimonials .content {
+    color: var(--primary-font-color);
   }
 
   /* Navigation */
   .navigation {
     margin-left: 60px !important;
+  }
+
+  /* Contact Us */
+  .contact-us-img {
+    height: 970px;
+  }
+
+  .contact .contact-heading {
+    margin-top: 80px !important;
+    margin-bottom: 24px !important;
+  }
+
+  .contact .sub-heading {
+    text-align: left !important;
+    width: 240px;
+    margin-left: 9%;
+  }
+
+  .contact .form {
+    margin-left: 9%;
+  }
+
+  .form-group input, .form-group textarea {
+    width: 275px;
+    height: 47px;
+  }
+
+  .form-group textarea {
+    height: auto;
+  }
+
+  .form .btn {
+    width: 109px;
+    height: 45px;
+  }
+
+  .socials {
+    margin-top: 28%;
+  }
+
+  .socials .title {
+    margin-bottom: 18px;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: var(--secondary-font-color);
+  }
+
+  .socials .icons {
+    margin-bottom: 40px;
+  }
+
+  .socials .last {
+    margin-bottom: 72px;
+  }
+
+  .socials .number,
+  .socials .email {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+  }
+
+  /* Footer */
+  .footer .row {
+    height: 90px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  /* Header */
+  .navbar-brand {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  /* Landing Image */
+  .landing .landing-inner {
+    width: 280px;
+  }
+
+  .landing-inner .heading {
+    font-size: 32px;
+    line-height: 43px;
+  }
+
+  .landing .content .btn,
+  .about-services .heading,
+  .portfolio .heading,
+  .contact .heading {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+    /* About Us */
+  .about-services-img {
+    height: 1550px;
+  }
+
+  .about-services .sub-heading {
+    font-size: 40px;
+    line-height: 53px;
+    width: 400px;
+  }
+
+  .about-services .content,
+  .services-content .context,
+  .testimonials .content-pic,
+  .form label {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .about-image .top-left-box,
+  .about-image .bottom-right-box {
+    height: -webkit-fill-available;
+    width: 390px;
+  }
+  
+  .box-right-1,
+  .box-right-2 {
+    height: 408px !important;
+  }
+
+  .services-content .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  /* Portfolio */
+  .portfolio {
+    margin-top: 150px;
+  }
+
+  .portfolio .gallery {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    margin-top: 100px;
+  }
+
+  .testimonials .content {
+    padding-top: 40px !important;
+    margin-top: 0px !important;
+    margin-bottom: 16px !important;
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  /* Navigation */
+  .navigation {
+    margin-bottom: 100px !important;
+  }
+
+  .navigation .dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(128, 128, 128, 0.5);
+    border-radius: 50%;
+  }
+
+  .navigation .active-dot {
+    background: var(--button-font-color);
+  }
+
+  /* Contact Us */
+  .contact .contact-heading {
+    margin-top: 100px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .contact .sub-heading {
+    font-size: 40px;
+    line-height: 53px;
+    width: 380px !important;
+  }
+
+  .form-group input, .form-group textarea {
+    width: 360px;
+    height: 50px;
+  }
+
+  .form-group textarea {
+    height: auto;
+  }
+
+  .socials {
+    margin-top: 35%;
+  }
+
+  .socials .title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 36px;
+  }
+
+  .socials .email,
+  .socials .number {
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .limit {
+    max-width: 1600px;
   }
 }
