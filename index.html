@@ -17,7 +17,7 @@
     <!-- Header -->
     <header>
       <div class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-light bg-white nav-bg limit">
+        <nav class="navbar navbar-expand-md bg-white navbar-light nav-bg limit">
           <a href="#" class="navbar-brand pl-lg-5">
             Plan <span class="amperstand">&</span> Perfection
           </a>
@@ -30,34 +30,29 @@
             aria-expanded="false"
             aria-label="Toggle Navigation"
           >
-            <!-- <img src="./img/signup/hamburger-menu-38.png" alt="hamburger-menu" class="img-fluid">    -->
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse bg-white" id="collapsibleNavbar">
             <ul class="navbar-nav text-center" id="growth">
               <li class="nav-item normal">
-                <a class="nav-link nav-active" href="#">Home</a>
+                <a class="nav-link nav-active pt-4" id="home" href="#">Home</a>
                 <div class="active-line active"></div>
               </li>
               <li class="nav-item normal">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#" id="about">About</a>
                 <div class="active-line"></div>
               </li>
               <li class="nav-item normal">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#" id="services-link">Services</a>
                 <div class="active-line"></div>
               </li>
               <li class="nav-item normal">
-                <a class="nav-link" href="#">Portfolio</a>
+                <a class="nav-link" href="#" id="portfolio-link">Portfolio</a>
                 <div class="active-line"></div>
               </li>
-              <li class="nav-item pr-md-1 normal">
-                <a class="nav-link" href="blog.html">Blog</a>
-                <div class="active-line"></div>
-              </li>
-              <li class="nav-item normal contact-btn">
-                <a class="nav-link" href="#">Contact Us</a>
+              <li class="nav-item pb-2 normal contact-btn">
+                <a class="nav-link" href="#" id="contact-link">Contact Us</a>
                 <div class="active-line"></div>
               </li>
             </ul>
@@ -150,7 +145,7 @@
           </div>
         </div>
 
-        <div class="row smaller-screens">
+        <div class="row smaller-screens" id="services">
           <div class="col-11 mx-auto services-content mb-5">
             <div class="d-flex mt-5 mb-3">
               <div class="line my-auto mr-3"></div>
@@ -216,7 +211,7 @@
             </div>
           </div>
 
-          <div class="col-11 col-md-5 mx-auto services-content mb-5">
+          <div class="col-11 col-md-5 mx-auto services-content mb-5" id="services">
             <div class="d-flex services-heading mt-5 mb-3">
               <div class="line my-auto mr-3 mr-md-4"></div>
               <div class="heading">Our Exquisite services</div>
@@ -258,7 +253,7 @@
 
     <!-- Portfolio -->
     <section>
-      <div class="container-fluid portfolio limit">
+      <div class="container-fluid portfolio limit" id="portfolio">
         <div class="row">
           <div class="col-11 mx-auto">
             <div class="d-flex mb-5">
@@ -376,7 +371,7 @@
 
     <!-- Contact Us -->
     <section>
-      <div class="container-fluid contact limit">
+      <div class="container-fluid contact limit" id="contact">
         <img src="./assets/mobile-images/contact-us-bg.png" alt="contact-us" class="img-fluid contact-us-img smaller-screens">
         <img src="./assets/larger-screens/contact-us-bg.png" alt="contact-us" class="img-fluid contact-us-img larger-screens">
         <div class="row">
@@ -494,6 +489,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
     <!-- Script end -->
   </body>
 </html>

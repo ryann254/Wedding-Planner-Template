@@ -23,6 +23,10 @@ body {
   color: var(--primary-font-color);
 }
 
+.nav-link {
+  color: var(--primary-font-color) !important;
+}
+
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
@@ -54,14 +58,12 @@ body {
 .navbar-nav .nav-link {
   font-weight: normal;
   font-size: 15px;
-  color: var(--primary-font-color) !important;
+  letter-spacing: 0.1em;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.collapse {
-  margin-top: 22px;
-  letter-spacing: 0.1em;
-  font-weight: normal;
-  font-family: "Nunito Sans", sans-serif;
+.nav-active {
+  color: var(--secondary-font-color) !important;
 }
 
 /* Landing Image */
@@ -451,7 +453,7 @@ body {
   }
 }
 
-@media all and (max-width: 767px){
+@media all and (max-width: 767px) {
   .larger-screens {
     display: none;
   }
@@ -501,6 +503,7 @@ body {
     width: 24px;
     height: 3px;
     background: var(--secondary-font-color);
+    transition: all 0.5s ease-in-out;
   }
 
   /* Landing Image */
@@ -535,7 +538,7 @@ body {
     left: 0;
   }
 
-  .about-image .bottom-right-box{
+  .about-image .bottom-right-box {
     right: 0;
   }
 
@@ -567,7 +570,7 @@ body {
 
   .services-content .context {
     width: 320px;
-}
+  }
 
   .box-right-2 {
     bottom: auto !important;
@@ -643,7 +646,8 @@ body {
     margin-left: 9%;
   }
 
-  .form-group input, .form-group textarea {
+  .form-group input,
+  .form-group textarea {
     width: 275px;
     height: 47px;
   }
@@ -683,7 +687,7 @@ body {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.1em;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   /* Footer */
@@ -717,7 +721,7 @@ body {
     line-height: 23px;
   }
 
-    /* About Us */
+  /* About Us */
   .about-services-img {
     height: 1550px;
   }
@@ -741,7 +745,7 @@ body {
     height: -webkit-fill-available;
     width: 390px;
   }
-  
+
   .box-right-1,
   .box-right-2 {
     height: 408px !important;
@@ -807,7 +811,8 @@ body {
     width: 380px !important;
   }
 
-  .form-group input, .form-group textarea {
+  .form-group input,
+  .form-group textarea {
     width: 360px;
     height: 50px;
   }
@@ -846,7 +851,7 @@ body {
 
   .landing .landing-inner {
     width: 340px;
-    }
+  }
 
   .landing-inner .heading {
     font-size: 40px;
@@ -859,7 +864,7 @@ body {
   }
 
   /* About Us */
-  .about-image .top-left-box, 
+  .about-image .top-left-box,
   .about-image .bottom-right-box {
     width: 480px;
   }
@@ -925,7 +930,8 @@ body {
     margin-left: 13%;
   }
 
-  .form-group input, .form-group textarea {
+  .form-group input,
+  .form-group textarea {
     width: 419px;
     height: 55px;
   }
@@ -977,7 +983,8 @@ body {
   }
 
   /* Contact Us */
-  .form-group input, .form-group textarea {
+  .form-group input,
+  .form-group textarea {
     width: 483px;
   }
 
@@ -1000,8 +1007,8 @@ body {
     margin-left: 70px;
   }
 
-   /* About Us */
-   .about-image .top-left-box {
+  /* About Us */
+  .about-image .top-left-box {
     left: 50px;
   }
 
@@ -1009,25 +1016,26 @@ body {
     right: 50px;
   }
 
-    /* Contact Us */
-    .form-group input, .form-group textarea {
-      width: 515px;
-    }
-  
-    .contact .sub-heading {
-      margin-left: 11% !important;
-    }
-  
-    .contact .form {
-      margin-left: 11%;
-    }
-  
-    .socials {
-      margin-top: 25%;
-    }
-    .contact-us-img {
-      height: 1170px;
-    }
+  /* Contact Us */
+  .form-group input,
+  .form-group textarea {
+    width: 515px;
+  }
+
+  .contact .sub-heading {
+    margin-left: 11% !important;
+  }
+
+  .contact .form {
+    margin-left: 11%;
+  }
+
+  .socials {
+    margin-top: 25%;
+  }
+  .contact-us-img {
+    height: 1170px;
+  }
 }
 
 @media all and (min-width: 1530px) {
