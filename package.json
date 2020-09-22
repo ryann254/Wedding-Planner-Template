@@ -1,0 +1,13 @@
+{
+  "name": "weddingplanner",
+  "version": "1.0.0",
+  "description": "Wedding Planner Website",
+  "main": "index.js",
+  "repository": "https://github.com/ryann254/Wedding-Planner-Template.git",
+  "author": "Ryan Njoroge <keddelyronjoz@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "imagemin": "^7.0.1",
+    "imagemin-webp": "^6.0.0"
+  }
+}
